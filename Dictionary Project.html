@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Dictionary Online</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+   <link rel='icon' href = 'https://icons.iconarchive.com/icons/blackvariant/shadow135-system/1024/Dictionary-icon.png'></link>
+  </head>
+  <link rel="stylesheet" href="Dictionary Project.css">
+  <body>
+    <div class="root">
+      <div class="left">
+        <content class="content">
+          <h1 class="h1">English Dictionary Online </h1>
+          <div class="input-btn">
+            <input
+              type="text"
+              class="input"
+              placeholder="Enter the word here!"
+            />
+            <button class="btn" onclick="getMeaning()">Translate</button>
+          </div>
+          <h2 class="word"></h2>
+          <h3 class="text"></h3>
+          <audio controls></audio>
+          <h2>
+            Definitions :
+           <ul class="meaning"></ul>
+          </h2>
+          <h3>
+            Example :
+            <ul class="example"></ul>
+          </h3>
+          <button class="btn-pdf" onclick="print()">PRINT </button>
+        </content>
+      </div>
+      <div class="right">
+        <div class="top-right">
+          <content class="content">
+            <center>
+              <img />
+            </center>
+          </content>
+        </div>
+        <div class="bottom-right">
+          <content class="content" ">
+            <h2 class="h2" >
+              Synonyms :
+              <ul class="syn"></ul>
+            </h2>
+          </content>
+        </div>
+      </div>
+    </div>
+    <script src="Dictionary Project.js"></script>
+  </body>
+</html>
